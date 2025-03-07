@@ -1415,6 +1415,8 @@ a:hover {
     width: 2rem;
   }
   .app-images{
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
   }
