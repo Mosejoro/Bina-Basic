@@ -1407,6 +1407,6 @@ a:hover {
   bottom: 40px;
   right: 10px;}
   .app-images{
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
