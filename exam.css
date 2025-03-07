@@ -1409,6 +1409,10 @@ a:hover {
   }
   .upcoming-apps .mobile{
     display: block;
+    font-size: 7px;
+  }
+  .app-preview{
+    width: 2rem;
   }
   .app-images{
     flex-direction: column;
