@@ -1398,7 +1398,7 @@ a:hover {
 }
 
 .app-preview {
-  width: 7rem;
+  width: 5rem;
   border-radius: 8px;
   object-fit: cover;
   border: 1px solid #ddd;
