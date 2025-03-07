@@ -1401,11 +1401,8 @@ a:hover {
   object-fit: cover;
   border: 1px solid #ddd;
 }
-@media (max-width: 480px) {
-  .upcoming-apps {
-  position: fixed;
-  bottom: 40px;
-  right: 10px;}
+@media (max-width: 767px) {
+  
   .app-images{
     flex-wrap: wrap;
   }
