@@ -1371,7 +1371,7 @@ a:hover {
   }
 }
 .upcoming-apps {
-  position: absolute;
+  position: fixed;
   top: 40px;
   right: 10px;
   text-align: center;
@@ -1396,7 +1396,7 @@ a:hover {
 }
 
 .app-preview {
-  width: 8rem;
+  width: 4rem;
   border-radius: 8px;
   object-fit: cover;
   border: 1px solid #ddd;
