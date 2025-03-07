@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      BINA Online Examination System - Practice Tests for Primary School
+      Students
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="BINA Online Examination System offers free practice exams for primary school students. Improve exam scores with our interactive tests. Upgrade to Pro for full features!"
+    />
+    <meta
+      name="keywords"
+      content="online exam, primary school, education, assessment, BINA, practice tests, Nigeria education"
+    />
+    <link rel="canonical" href="https://yourwebsite.com/index.html" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <meta name="theme-color" content="#f7b500" />
+    <link rel="stylesheet" href="exam.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta
+      property="og:title"
+      content="BINA Online Examination System - Practice Tests for Primary School Students"
+    />
+    <meta
+      property="og:description"
+      content="Improve your child's exam scores with BINA's interactive practice tests. Try our free basic version or upgrade to Pro for full features!"
+    />
+    <meta property="og:image" content="logo.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourwebsite.com/" />
+    <meta property="twitter:title" content="BINA Online Examination System" />
+    <meta
+      property="twitter:description"
+      content="Improve your child's exam scores with BINA's interactive practice tests. Try our free basic version or upgrade to Pro for full features!"
+    />
+    <meta property="twitter:image" content="logo.png" />
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalApplication",
+        "name": "BINA Online Examination System",
+        "description": "Practice exams for primary school students in Nigeria. Improve exam scores with our interactive tests.",
+        "applicationCategory": "Education",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "NGN",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "156"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="pro-badge">Basic Version</div>
+
+    <div class="container">
+      <div class="header">
+        <img src="logo.png" alt="BINA Logo" /><br />
+        <h1>Online Examination System</h1>
+        <div class="version-banner">
+          <span class="basic-tag">BASIC VERSION</span>
+          <a href="https://binapayment.vercel.app" class="upgrade-link">
+            <i class="fas fa-crown"></i> Upgrade to Pro
+          </a>
+        </div>
+
+        <div class="feature-comparison">
+          <div class="basic-features">
+            <h4>Basic Features (Current)</h4>
+            <ul>
+              <li><i class="fas fa-check"></i> 10 questions per exam</li>
+              <li><i class="fas fa-check"></i> 15-minute timer</li>
+              <li><i class="fas fa-check"></i> Limited Questions</li>
+              <li><i class="fas fa-check"></i> Basic results</li>
+            </ul>
+          </div>
+          <div class="pro-features">
+            <h4>Pro Features (₦5,000 Lifetime)</h4>
+            <ul>
+              <li><i class="fas fa-star"></i> 20 questions per exam</li>
+              <li><i class="fas fa-star"></i> 30-minute timer</li>
+              <li><i class="fas fa-star"></i>Unlimited Questions</li>
+              <!-- <li><i class="fas fa-star"></i> Detailed analytics</li> -->
+              <!-- <li><i class="fas fa-star"></i> Save progress</li> -->
+              <li><i class="fas fa-star"></i> No ads</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>Select a Subject to Begin</h3>
+      </div>
+
+      <div class="selection-form animate__animated animate__fadeIn">
+        <div class="form-group Day">
+          <label for="day">Select Day:</label>
+          <select id="day" class="form-control">
+            <option value="Day1">Monday</option>
+            <!-- Other days would be Pro only -->
+          </select>
+        </div>
+
+        <div class="form-group class">
+          <label for="class">Select Class:</label>
+          <select id="class" class="form-control">
+            <option value="P6">Primary 6</option>
+            <!-- Other classes would be Pro only -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Select Subject:</label>
+          <select id="subject" class="form-control"></select>
+        </div>
+
+        <button
+          onclick="startExam()"
+          class="btn btn-primary btn-block"
+          data-action="start-exam"
+          aria-label="Begin Examination"
+        >
+          Start Free Exam
+        </button>
+
+        <div class="upgrade-banner">
+          <p>
+            Want access to all subjects, more questions, and detailed analytics?
+          </p>
+          <a href="https://binapayment.vercel.app" class="btn-upgrade">
+            Upgrade to Pro for ₦5,000 (Lifetime Access)
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="why-upgrade-section">
+        <h3><i class="fas fa-crown"></i> Why Upgrade to Pro?</h3>
+        <div class="upgrade-benefits">
+          <div class="benefit-item">
+            <i class="fas fa-book"></i>
+            <h4>Complete Curriculum Coverage</h4>
+            <p>
+              Access all subjects and classes with comprehensive question banks
+              aligned with the Nigerian curriculum.
+            </p>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-chart-line"></i>
+            <h4>Detailed Performance Analytics</h4>
+            <p>
+              Track progress over time with detailed reports showing strengths
+              and areas for improvement.
+            </p>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-infinity"></i>
+            <h4>Lifetime Access</h4>
+            <p>
+              Pay once (₦5,000) and get lifetime access to all current and
+              future features - no recurring fees!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <h3>What Our Pro Users Say</h3>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "My children improved their exam scores by 35% after using BINA Pro
+            for just one month!"
+          </p>
+          <div class="testimonial-author">- Mrs. Adeyemi, Parent</div>
+        </div>
+        <div class="testimonial">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "The detailed analytics in the Pro version helped me identify
+            exactly where my students needed help."
+          </p>
+          <div class="testimonial-author">- Mr. Johnson, Teacher</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section">
+      <div class="container">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What's included in the Pro version?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                The Pro version includes access to all subjects and classes, 20
+                questions per exam (instead of 5), a 30-minute timer (instead of
+                15), detailed performance analytics, progress tracking, and
+                lifetime access to all future updates.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Is the ₦5,000 fee a one-time payment?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! The ₦5,000 fee is a one-time payment for lifetime access.
+                There are no recurring fees or hidden charges.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>How do I pay for the Pro version?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Payment is simple and secure through our payment portal at
+                <a href="https://binapayment.vercel.app"
+                  >binapayment.vercel.app</a
+                >. We accept bank transfers and major payment methods.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Can I try before I buy?</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                The Basic version you're using now is our free trial. It gives
+                you a taste of what BINA offers, while the Pro version unlocks
+                the full experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="logo.png" alt="BINA Logo" width="60" />
+            <h3>BINA Examination System</h3>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li>
+                <a href="https://binapayment.vercel.app">Upgrade to Pro</a>
+              </li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-envelope"></i> bivativit@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +234 8135900015</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 BINA Examination System. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Clear any existing exam data
+      document.addEventListener("DOMContentLoaded", function () {
+        localStorage.removeItem("examDay");
+        localStorage.removeItem("examClass");
+        localStorage.removeItem("examSubject");
+        localStorage.removeItem("examInProgress");
+
+        // For basic version, we'll set a guest username
+        localStorage.setItem("userName", "Guest User");
+
+        // Initialize FAQ toggles
+        const faqQuestions = document.querySelectorAll(".faq-question");
+        faqQuestions.forEach((question) => {
+          question.addEventListener("click", () => {
+            const faqItem = question.parentElement;
+            faqItem.classList.toggle("active");
+          });
+        });
+      });
+
+      // Timetable - Limited for basic version
+      const timetable = {
+        Day1: {
+          P6: ["Mathematics_Trial", "English_Trial", "GNS_Trial"], // Limited subjects in basic version
+        },
+      };
+
+      document.getElementById("day").addEventListener("change", updateSubjects);
+      document
+        .getElementById("class")
+        .addEventListener("change", updateSubjects);
+
+      function updateSubjects() {
+        let day = document.getElementById("day").value;
+        let cls = document.getElementById("class").value;
+        let subjectsDropdown = document.getElementById("subject");
+
+        subjectsDropdown.innerHTML = "";
+
+        if (timetable[day] && timetable[day][cls]) {
+          timetable[day][cls].forEach((subject) => {
+            let option = document.createElement("option");
+            option.value = subject;
+            option.textContent = subject.replace(/_/g, " ");
+            subjectsDropdown.appendChild(option);
+          });
+        }
+      }
+
+      function startExam() {
+        const day = document.getElementById("day").value;
+        const cls = document.getElementById("class").value;
+        const subject = document.getElementById("subject").value;
+
+        if (!subject) {
+          alert("Please select a subject.");
+          return;
+        }
+
+        // Store selections in localStorage
+        localStorage.setItem("examDay", day);
+        localStorage.setItem("examClass", cls);
+        localStorage.setItem("examSubject", subject);
+        localStorage.setItem("examVersion", "basic"); // Mark as basic version
+
+        // Redirect to questions page
+        window.location.href = "questions.html";
+      }
+
+      // Initialize subjects dropdown
+      updateSubjects();
+    </script>
+  </body>
+</html>
