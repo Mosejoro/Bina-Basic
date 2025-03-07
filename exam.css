@@ -1388,7 +1388,9 @@ a:hover {
   color: #333;
   font-size: 14px;
 }
-
+.upcoming-apps .mobile{
+  display: none;
+}
 .app-images {
   display: flex;
   justify-content: center;
@@ -1403,7 +1405,10 @@ a:hover {
 }
 @media (max-width: 767px) {
   .upcoming-apps p{
-    text-wrap: wrap;
+    display: none;
+  }
+  .upcoming-apps .mobile{
+    display: block;
   }
   .app-images{
     flex-direction: column;
