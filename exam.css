@@ -1404,6 +1404,7 @@ a:hover {
 @media (max-width: 767px) {
   
   .app-images{
+    flex-direction: column;
     flex-wrap: wrap;
   }
 }
